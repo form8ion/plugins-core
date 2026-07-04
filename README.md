@@ -28,7 +28,7 @@ core functionality for form8ion plugins
 ### Installation
 
 ```sh
-$ npm install @form8ion/plugins-core
+$ npm install @form8ion/plugins-core --save-prod
 ```
 
 ### Example
