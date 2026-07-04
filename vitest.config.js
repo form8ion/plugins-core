@@ -1,0 +1,17 @@
+import {defineConfig} from 'vitest/config';
+
+export default defineConfig({
+  test: {
+    globals: false,
+    restoreMocks: true,
+    mockReset: true,
+    resetEnv: true,
+
+    coverage: {
+      provider: 'v8',
+      reporter: ['lcov', 'text-summary', 'html'],
+      include: ['src/**'],
+      exclude: ['src/**/index.js']
+    }
+  }
+});
