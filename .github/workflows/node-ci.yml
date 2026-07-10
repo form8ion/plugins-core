@@ -49,6 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - verify
+      - release
     if: ${{ !cancelled() }}
     steps:
       - name: All matrix versions passed
