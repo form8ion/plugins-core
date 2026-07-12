@@ -34,7 +34,25 @@ $ npm install @form8ion/plugins-core --save-prod
 ### Example
 
 ```javascript
-import {} from '@form8ion/plugins-core';
+import {scaffold} from '@form8ion/plugins-core';
+
+async function runExample() {
+  await scaffold.qualifiedOption(
+    {
+      'qualified-plugin': {
+        qualify: async () => true,
+        scaffold: () => {}
+      },
+      'unqualified-plugin': {
+        qualify: async () => false,
+        scaffold: () => {}
+      }
+    },
+    {projectRoot: process.cwd()}
+  );
+}
+
+runExample();
 ```
 
 ## Contributing

@@ -1,7 +1,7 @@
 _extends: .github
 repository:
-  name: plugins-core
-  description: core functionality for form8ion plugins
+  name: scaffold-core
+  description: core functionality for form8ion scaffold
   visibility: public
   homepage: https://www.npmjs.com/package/@form8ion/plugins-core
 branches:
